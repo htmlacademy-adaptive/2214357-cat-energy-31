@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Виталий Макаров](https://up.htmlacademy.ru/adaptive/31/user/2214357).
-* Наставник: Ольга Ветер.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 * Сайт: https://github.com/Vitali3207/2214357-cat-energy-31.
 ---
 
