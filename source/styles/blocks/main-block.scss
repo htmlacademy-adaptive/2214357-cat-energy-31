@@ -1,0 +1,26 @@
+.main-block {
+  min-width: 100%;
+  min-height: 302px;
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@2x.jpg");
+  }
+}
+
+.main-block__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-text-fourth;
+}
+
+.main-block__description {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text-fourth;
+}

@@ -15,34 +15,36 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo logo">
-      <a class="logo__icon" href="index.html">
-        <picture>
-          <source width="70" height="59" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" type="image/svg+xml">
-          <source width="60" height="50" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg+xml">
-          <img src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
-        </picture>
-        <img src="./images/logo-title-mobile.svg" width="118" height="21" alt="Cat Energy">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually hiden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
+    <div class="header-container">
+      <div class="main-header__logo">
+        <a class="main-header__icon" href="index.html">
+          <picture>
+            <source width="70" height="59" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" type="image/svg+xml">
+            <source width="60" height="50" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg+xml">
+            <img src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
+          </picture>
+          <img src="./images/logo-title-mobile.svg" width="118" height="21" alt="Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually hiden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-catalog">
     <section class="catalog">
@@ -52,7 +54,7 @@
           <picture>
             <source width="169" height="210" media="(min-width: 1440px)" srcset="./images/chicken-500-desktop@1x.png 1x, ./images/chicken-500-desktop@2x.png 2x" type="image/png">
             <source width="200" height="210" media="(min-width: 768px)" srcset="./images/chicken-500-tablet@1x.png 1x, ./images/chicken-500-tablet@2x.png 2x" type="image/png">
-            <img class="catalog__item-images" src="./images/chicken-500-mobile@1x.png" srcset="source/images/chicken-500-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 500г">
+            <img class="catalog__item-images" src="./images/chicken-500-mobile@1x.png" srcset="./images/chicken-500-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 500г">
           </picture>
           <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
           <dl class="catalog__description description-list">
@@ -227,7 +229,7 @@
             <dt class="product-additional__termin">1 упаковка (100 г)</dt>
             <dd class="product-additional__meaning">200 ₽</dd>
           </dl>
-          <button class="catalog-additional__button" type="button">Заказать</button>
+          <button class="catalog-additional__button button" type="button">Заказать</button>
         </li>
         <li class="catalog-additional__item product-additional">
           <h3 class="catalog-additional__title">Питьевая вода</h3>
@@ -235,7 +237,7 @@
             <dt class="product-additional__termin">5 литров</dt>
             <dd class="product-additional__meaning">50 ₽</dd>
           </dl>
-          <button class="catalog-additional__button" type="button">Заказать</button>
+          <button class="catalog-additional__button button" type="button">Заказать</button>
         </li>
         <li class="catalog-additional__item product-additional">
           <h3 class="catalog-additional__title">Молоко</h3>
@@ -243,7 +245,7 @@
             <dt class="product-additional__termin">1 Литр</dt>
             <dd class="product-additional__meaning">100 ₽</dd>
           </dl>
-          <button class="catalog-additional__button" type="button">Заказать</button>
+          <button class="catalog-additional__button button" type="button">Заказать</button>
         </li>
         <li class="catalog-additional__item product-additional">
           <h3 class="catalog-additional__title">Витамины</h3>
@@ -251,7 +253,7 @@
             <dt class="product-additional__termin">1 упаковка (30 г)</dt>
             <dd class="product-additional__meaning">300 ₽</dd>
           </dl>
-          <button class="catalog-additional__button" type="button">Заказать</button>
+          <button class="catalog-additional__button button" type="button">Заказать</button>
         </li>
       </ul>
       <div class="catalog-additional__promo">
@@ -270,7 +272,7 @@
     </section>
     <section class="promo">
       <h2 class="visually-hiden">Приглашение</h2>
-      <div class="promo__wrappper">
+      <div class="promo__wrappper-catalog">
         <p class="promo__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="promo__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
@@ -281,9 +283,9 @@
       </picture>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__wrappper">
+      <div class="footer-container">
         <div class="main-footer__logo">
-          <a class="footer-logo" href="index.html">
+          <a class="main-footer__link" href="index.html">
             <img class="main-footer__logo-images" src="source/images/icons/footer-logo.svg" width="128" height="24" alt="Логотип компании Cat Energy.">
           </a>
         </div>

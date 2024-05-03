@@ -16,34 +16,36 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo logo">
-      <a class="logo__icon" href="index.html">
-        <picture>
-          <source width="70" height="59" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" type="image/svg+xml">
-          <source width="60" height="50" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg+xml">
-          <img src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
-        </picture>
-        <img src="./images/logo-title-mobile.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually hiden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
+    <div class="header-container">
+      <div class="main-header__logo">
+        <a class="main-header__icon" href="index.html">
+          <picture>
+            <source width="70" height="59" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" type="image/svg+xml">
+            <source width="60" height="50" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg+xml">
+            <img src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
+          </picture>
+          <img src="./images/logo-title-mobile.svg" width="118" height="21" alt="Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually hiden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <div class="main-container__wrapper">
@@ -57,11 +59,12 @@
           <source width="709" height="609" media="(min-width: 768px)" srcset="./images/index-can-tablet@1x.png 1x, ./images/index-can-tablet@2x.png 2x" type="image/png">
           <img class="main-block__images" src="./images/index-can@1x.png" srcset="./images/index-can@2x.png 2x" width="280" height="270" alt="Питание для котов">
         </picture>
-        <a class="button" href="#">Подобрать программу</a>
+        <a class="main-block__button button" href="#">Подобрать программу</a>
       </section>
     </div>
     <div class="programs">
       <div class="programs__columns">
+        <h3 class="programs__title">Похудение</h3>
         <p class="programs__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
@@ -110,7 +113,7 @@
             <dd class="results__description">затрачено времени</dd>
           </div>
         </dl>
-        <p class="example-total">
+        <p class="example__total">
           <span>Затраты на питание:</span>
           15 000 РУБ.
         </p>
@@ -131,7 +134,7 @@
     <section class="promo">
       <h2 class="visually-hiden">Приглашение</h2>
       <div class="promo__wrappper">
-        <p class="promo__text">Приглашаем к сотрудничеству дилеров!</p>
+        <b class="promo__text">Приглашаем к сотрудничеству дилеров!</b>
         <address class="promo__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <picture>
@@ -141,9 +144,9 @@
       </picture>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__wrappper">
+      <div class="footer-container">
         <div class="main-footer__logo">
-          <a class="footer-logo" href="index.html">
+          <a class="main-footer__link" href="index.html">
             <img class="main-footer__logo-images" src="#" width="128" height="24" alt="Логотип компании Cat Energy.">
           </a>
         </div>

@@ -1,0 +1,20 @@
+.instruction__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.instruction__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.instruction__description {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-text-secondary;
+}

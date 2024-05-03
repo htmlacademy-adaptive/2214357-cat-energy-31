@@ -1,0 +1,25 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.example__description {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-secondary;
+}
+
+.example__total {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

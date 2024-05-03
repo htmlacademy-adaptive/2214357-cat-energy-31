@@ -1,1 +1,13 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-text-primary;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
