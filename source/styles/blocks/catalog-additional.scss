@@ -9,6 +9,17 @@
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background@2x.jpg");
   }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon-promo.svg");
+    background-repeat: no-repeat;
+    background-color: $color-text-fourth;
+    background-size: 78px 80px;
+  }
 }
 
 .catalog-additional__headline {

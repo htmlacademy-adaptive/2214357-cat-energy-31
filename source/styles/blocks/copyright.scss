@@ -1,3 +1,21 @@
-.copyright {
-  box-sizing: border-box;
+.copyright__link {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-secondary;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html.svg");
+    mask-repeat: no-repeat;
+    background-color: $bg-color-social;
+  }
 }

@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: number;
 }
 
 .instruction__description {
@@ -17,4 +18,40 @@
   line-height: 18px;
   text-align: center;
   color: $color-text-secondary;
+}
+
+.instruction__item {
+  &--first {
+    --icon: url("../../icons/stack.svg#group-one");
+  }
+
+  &--second {
+    --icon: url("../../icons/stack.svg#group-two");
+  }
+
+  &--third {
+    --icon: url("../../icons/stack.svg#group-three");
+  }
+
+  &--fourth {
+    --icon: url("../../icons/stack.svg#group-four");
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    font-family: $font-secondary;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bg-basic-grey;
+    content: counter(number);
+    counter-increment: number;
+  }
 }
