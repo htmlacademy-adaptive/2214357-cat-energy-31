@@ -12,3 +12,12 @@
   color: $color-text-primary;
   text-decoration: none;
 }
+
+.main-nav__toggle {
+  display: block;
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/toggle-mobile.svg");
+  mask-repeat: no-repeat;
+  background-color: $color-text-primary;
+}
