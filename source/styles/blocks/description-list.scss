@@ -3,4 +3,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-text-secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid $color-line-2;
+    width: 250px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+  }
 }

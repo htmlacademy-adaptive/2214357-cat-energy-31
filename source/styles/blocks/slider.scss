@@ -1,3 +1,79 @@
 .slider {
-  box-sizing: border-box;
+  padding-bottom: 40px;
 }
+
+.slider__wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 280px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+}
+
+.slider__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: left;
+  object-fit: cover;
+
+
+  &--before {
+    position: absolute;
+    width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 280px;
+    }
+  }
+
+  &--after {
+    clip-path: inset(0 0 0 50%);
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  padding: 0;
+  background-color: $bg-color-social;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 107px;
+  right: 118px;
+  width: 40px;
+  height: 40px;
+  background-color: $color-text-fourth;
+  border: 2px solid $bg-color-social;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 265px;
+    right: 257px;
+  }
+
+
+  &::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 18px;
+    mask: url("../../icons/stack.svg#thumb");
+    background-color: $bg-color-social;
+    background-repeat: no-repeat;
+  }
+}
+

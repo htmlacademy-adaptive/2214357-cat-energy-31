@@ -10,13 +10,13 @@
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/header-container.scss";
-@import "./blocks/main-nav.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/navigation-button.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/main-block.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/instruction.scss";
 @import "./blocks/example.scss";
-@import "./blocks/results.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/main-footer.scss";
@@ -25,6 +25,7 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/main-catalog.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/catalog-card.scss";
 @import "./blocks/description-list.scss";
 @import "./blocks/catalog-additional.scss";
 @import "./blocks/product-additional.scss";

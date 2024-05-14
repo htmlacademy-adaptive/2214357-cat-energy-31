@@ -1,3 +1,23 @@
 .footer-container {
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    height: 37px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
 }

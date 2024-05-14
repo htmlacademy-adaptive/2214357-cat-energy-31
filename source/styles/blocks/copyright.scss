@@ -1,21 +1,43 @@
 .copyright__link {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 280px;
+  height: 34px;
+  position: relative;
+  right: 0;
   font-family: $font-primary;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-secondary;
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    top: 5px;
+    right: -133px;
+  }
+
   &:active {
     opacity: 0.3;
   }
 
   &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: block;
     content: "";
     width: 27px;
     height: 34px;
-    mask-image: url("../../icons/stack.svg#logo-html.svg");
+    mask-image: url("../../icons/stack.svg#logo-html");
     mask-repeat: no-repeat;
+    mask-size: 27px 34px;
     background-color: $bg-color-social;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 119px;
+    }
   }
 }

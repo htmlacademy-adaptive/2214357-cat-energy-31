@@ -1,40 +1,79 @@
+.instruction {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
 .instruction__title {
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
+
+.instruction__description {
+  margin: 0;
+
+  align-self: center;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 
 .instruction__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   counter-reset: number;
-}
 
-.instruction__description {
-  font-family: $font-primary;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: $color-text-secondary;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 77px;
+  }
 }
 
 .instruction__item {
-  &--first {
-    --icon: url("../../icons/stack.svg#group-one");
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  &--one {
+    --images: url("../../icons/stack.svg#group-one");
   }
 
-  &--second {
-    --icon: url("../../icons/stack.svg#group-two");
+  &--two {
+    --images: url("../../icons/stack.svg#group-two");
   }
 
-  &--third {
-    --icon: url("../../icons/stack.svg#group-three");
+  &--three {
+    --images: url("../../icons/stack.svg#group-three");
   }
 
-  &--fourth {
-    --icon: url("../../icons/stack.svg#group-four");
+  &--four {
+    --images: url("../../icons/stack.svg#group-four");
   }
 
   &::before {
@@ -42,16 +81,38 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: var(--icon);
+    background-image: var(--images);
     background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  &::after {
-    font-family: $font-secondary;
-    font-size: 280px;
-    line-height: 280px;
-    color: $bg-basic-grey;
-    content: counter(number);
-    counter-increment: number;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    gap: 31px;
+    width: 249px;
+    min-height: 280px;
+    padding-top: 40;
+    padding-bottom: 57px;
+
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 115px;
+      font-family: $font-secondary;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-basic-grey;
+      content: counter(number);
+      counter-increment: number;
+      z-index: -1;
+    }
   }
 }
+

@@ -1,3 +1,36 @@
 .page {
-  box-sizing: border-box;
+  height: 100%;
 }
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-color: $color-text-fourth;
+}
+
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1220px;
+  }
+}
+

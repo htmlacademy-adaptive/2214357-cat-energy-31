@@ -1,3 +1,28 @@
 .main-footer {
   background-color: $bg-basic-grey;
 }
+
+.main-footer__link {
+  display: block;
+  border-bottom: 1px solid $color-line-1;
+  width: 280px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-footer-images {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-left: 76px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}

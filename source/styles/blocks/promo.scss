@@ -1,5 +1,27 @@
-.promo__wrappper-catalog {
-  background-color: $bg-basic-grey;
+.promo {
+  position: relative;
+}
+
+.promo__wrappper {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 78px;
+    position: absolute;
+    top: 95px;
+    z-index: 0;
+    background-color: $bg-basic-white;
+    min-width: 565px;
+  }
 }
 
 .promo__text {
@@ -7,13 +29,47 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  text-align: left;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .promo__address {
   font-family: $font-primary;
   font-size: 14px;
   line-height: 20px;
-  text-align: right;
   color: $color-text-secondary;
+  width: 140px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.promo__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.promo__map {
+  display: block;
+  border: none;
+  min-width: 320px;
+  height: 100%;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -110px;
+    margin-right: -110px;
+  }
 }
