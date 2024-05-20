@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  border-top: 1px solid $color-line-1;
   border-bottom: 1px solid $color-line-1;
   width: 280px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -22,6 +24,10 @@
   list-style: none;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {

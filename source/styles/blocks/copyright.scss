@@ -1,6 +1,10 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+  }
+}
+
 .copyright__link {
-  margin: 0;
-  padding: 0;
   display: block;
   width: 280px;
   height: 34px;
@@ -12,14 +16,16 @@
   color: $color-text-secondary;
   text-decoration: none;
 
+
   @media (min-width: $tablet-width) {
     margin: 0;
-    top: 5px;
-    right: -133px;
-  }
+    width: 168px;
+    display: table-cell;
+    vertical-align: middle;
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &::after {
@@ -37,7 +43,7 @@
 
     @media (min-width: $tablet-width) {
       top: 0;
-      left: 119px;
+      left: 140px;
     }
   }
 }

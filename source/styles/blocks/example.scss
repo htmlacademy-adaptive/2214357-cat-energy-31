@@ -1,18 +1,21 @@
 .example {
-  position: relative;
   background-color: $special-grey-2;
 
-  @media (min-width: $tablet-width) {
-    background-color: $bg-basic-white;
-    z-index: 0;
-  }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $bg-basic-white 650px, $bg-basic-grey 650px);
+    z-index: 0;
+    margin: 0;
+
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      background: linear-gradient(to bottom, $bg-basic-white 145px, $bg-basic-grey 145px);
+    }
   }
 }
 
-.example_container {
+.example__container {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -20,6 +23,12 @@
   @media (min-width: $desktop-width) {
     max-width: 436px;
     margin-right: 224px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -69,7 +78,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    min-height: 77px;
+    max-height: 77px;
   }
 }
 
@@ -132,16 +141,15 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
-    background-color: $special-grey-2;
+    background-color: $bg-basic-grey;
   }
 }
 
-.example__total {
+.example__expenses {
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
   color: $color-text-primary;
-  text-align: center;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -160,8 +168,12 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
-    column-gap: 63px;
+    justify-content: flex-start;
   }
 }
 
+.example-price {
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+  }
+}
