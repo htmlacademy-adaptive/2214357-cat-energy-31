@@ -1,8 +1,8 @@
 .catalog-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 17px;
-  padding: 20px 20px 20px 25px;
+  row-gap: 7px;
+  padding: 20px 20px 25px;
 
 
   @media (min-width: $tablet-width) {
@@ -25,15 +25,15 @@
 .catalog-card-plus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 20px 20px 25px;
+  padding: 20px 20px 25px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     max-width: 324px;
-    padding: 50px 37px 40px;
-    margin-top: 80px;
+    padding: 36px 37px 40px;
+    margin-top: 83px;
     border: 2px solid $bg-basic-grey;
     background-color: $bg-basic-white;
   }
@@ -47,28 +47,30 @@
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $color-text-third;
   margin: 0;
   margin-bottom: 14px;
   width: 76px;
   min-height: 40px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     width: 135px;
     min-height: 48px;
     text-align: center;
-    margin-left: 58px;
+    margin-left: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     width: 140px;
     min-height: 49px;
-    margin-left: 15px;
+    margin-left: 14px;
   }
 }
 
@@ -76,7 +78,7 @@
   display: block;
   width: 140px;
   max-height: 107px;
-  object-fit: contain;
+  object-fit: cover;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -88,6 +90,7 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     max-height: 210px;
+    margin-bottom: 13px;
   }
 }
 
@@ -97,11 +100,13 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    height: 167px;
+    margin-bottom: 31px;
   }
 }
 
@@ -120,23 +125,30 @@
     margin-top: 65px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
+
   &::before {
     position: absolute;
     display: block;
     content: "";
     width: 30px;
     height: 30px;
+    top: 5px;
     left: 95px;
     background-image: url("../../icons/stack.svg#plus");
     background-repeat: no-repeat;
 
-    margin-bottom: 23px;
-
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -60px;
+      top: -53px;
       left: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -40px;
     }
   }
 }
@@ -148,10 +160,12 @@
   color: $color-text-third;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 53px;
+  margin: 0;
+  margin-top: 59px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -171,10 +185,23 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 91px;
+  }
 }
 
 .catalog-card__button {
   grid-column: 1/3;
+
+  &:hover {
+    background-color: $bg-color-3;
+  }
+
+  &:active {
+    background-color: $bg-color-3;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 94px;

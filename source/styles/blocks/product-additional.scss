@@ -10,17 +10,23 @@
   justify-content: space-between;
   margin-bottom: 15px;
 
-  @media (min-width: $tablet-width) {
-    width: 340px;
-    justify-content: right;
-    text-align: end;
-  }
 
   @media (min-width: $tablet-width) {
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: right;
+    text-align: end;
+    margin-bottom: 22px;
+    margin-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
     text-align: left;
-    justify-content: end;
+    justify-content: space-between;
     width: 285px;
     margin-bottom: 0;
+    padding-top: 8px;
     align-items: center;
   }
 }
@@ -32,4 +38,8 @@
     width: 100%;
     align-items: center;
   }
+}
+
+.product-additional__meaning {
+  margin-left: 52px;
 }

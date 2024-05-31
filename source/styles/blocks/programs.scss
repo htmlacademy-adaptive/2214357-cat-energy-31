@@ -2,11 +2,11 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 72px;
   }
 }
 
@@ -37,7 +37,7 @@
   min-width: 280px;
   min-height: 266px;
   padding: 30px 20px 20px;
-  margin-bottom: 20px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 42px 52px;
   }
 
   &--slim::before {
@@ -65,7 +65,7 @@
       right: 63px;
       left: unset;
       width: 200px;
-      height: 213px;
+      height: 210px;
     }
 
     @media (min-width: $desktop-width) {
@@ -79,16 +79,16 @@
   &--pro::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 53px;
+    top: 23px;
+    left: 12px;
+    width: 67px;
+    height: 50px;
     background-image: url("../../icons/stack.svg#cat-pro");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       top: 91px;
-      right: 29px;
+      right: 26px;
       left: unset;
       width: 268px;
       height: 200px;
@@ -98,7 +98,7 @@
       top: 47px;
       right: unset;
       left: 33px;
-      width: 134px;
+      width: 137px;
       height: 100px;
     }
   }
@@ -117,38 +117,40 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24;
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 214px;
-    margin-right: 73px;
+    @media (min-width: $desktop-width) {
+      margin-left: 162px;
+    }
   }
 }
 
 .programs__description {
   font-family: $font-primary;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 23px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 21px;
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 29px;
+  padding-bottom: 22px;
 
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 24;
     border: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 214px;
-    margin-right: 73px;
+    margin-top: 73px;
   }
 }
 
 
 .programs__link {
   position: relative;
+  top: -3px;
+  right: -1px;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
@@ -157,9 +159,18 @@
   color: $color-text-primary;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    top: 7px;
+
+    @media (min-width: $desktop-width) {
+      top: -18px;
+    }
   }
 
 
@@ -169,14 +180,14 @@
     content: "";
     width: 32px;
     height: 10px;
-    top: 5px;
-    left: 100px;
+    top: 6px;
+    left: 101px;
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       top: 10px;
-      left: 115px;
+      left: 131px;
     }
   }
 }

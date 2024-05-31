@@ -3,10 +3,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
+    border-bottom: 1px solid $color-line-5;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    padding: 0;
+    border: none;
   }
 }
 
@@ -14,22 +18,28 @@
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px;
+  margin: -2px 0 38px;
+  font-weight: 400;
+  color: $color-text-primary;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 }
 
 .instruction__description {
   margin: 0;
-
   align-self: center;
   font-family: $font-primary;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 
@@ -45,12 +55,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px;
+    gap: 58px;
+    row-gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 77px;
+    column-gap: 76px;
   }
 }
 
@@ -62,18 +73,34 @@
 
   &--one {
     --images: url("../../icons/stack.svg#group-one");
+
+    @media (min-width: $tablet-width) {
+      --images: url("../../icons/stack.svg#group-one-tablet");
+    }
   }
 
   &--two {
     --images: url("../../icons/stack.svg#group-two");
+
+    @media (min-width: $tablet-width) {
+      --images: url("../../icons/stack.svg#group-two-tablet");
+    }
   }
 
   &--three {
     --images: url("../../icons/stack.svg#group-three");
+
+    @media (min-width: $tablet-width) {
+      --images: url("../../icons/stack.svg#group-three-tablet");
+    }
   }
 
   &--four {
     --images: url("../../icons/stack.svg#group-four");
+
+    @media (min-width: $tablet-width) {
+      --images: url("../../icons/stack.svg#group-four-tablet");
+    }
   }
 
   &::before {
@@ -89,12 +116,13 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+      background-size: 80px 80px;
     }
   }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    gap: 31px;
+    gap: 27px;
     width: 249px;
     min-height: 280px;
     padding-top: 40;
@@ -113,5 +141,11 @@
       counter-increment: number;
       z-index: -1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 31px;
+    padding-top: 41px;
+    padding-bottom: 57px;
   }
 }

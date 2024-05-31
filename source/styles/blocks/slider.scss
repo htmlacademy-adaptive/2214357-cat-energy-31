@@ -1,5 +1,13 @@
 .slider {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
 }
 
 .slider__wrapper {
@@ -38,7 +46,7 @@
 .slider__controls {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 139px;
   height: 100%;
   width: 4px;
   padding: 0;
@@ -48,31 +56,59 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: $bg-color-slider;
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 278px;
+  }
 }
 
 .slider__toggle {
   position: absolute;
   top: 107px;
-  right: 118px;
+  right: 120px;
   width: 40px;
   height: 40px;
   background-color: $color-text-fourth;
   border: 2px solid $bg-color-social;
   border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
-    top: 265px;
-    right: 257px;
+  &:hover {
+    border: 2px solid $bg-basic-green;
   }
 
+  &:active {
+    border: 2px solid $bg-color-slider;
+  }
 
-  &::after {
-    display: block;
-    content: "";
-    width: 24px;
-    height: 18px;
-    mask: url("../../icons/stack.svg#thumb");
-    background-color: $bg-color-social;
-    background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    top: 237px;
+    right: 258px;
+  }
+}
+
+.slider__images {
+  position: absolute;
+  bottom: 9px;
+  left: 5px;
+  width: 24px;
+  height: 18px;
+  color: $bg-color-social;
+
+  &:hover {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: $bg-color-slider;
+    opacity: 0.6;
   }
 }

@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 168px;
+    width: 162px;
     display: table-cell;
     vertical-align: middle;
 
@@ -27,23 +27,25 @@
       opacity: 0.3;
     }
   }
+}
 
-  &::after {
-    position: absolute;
+.copyright__logo {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  right: 0;
+  bottom: 6;
+  color: $bg-color-social;
+
+  &:focus-visible path {
+    color: $bg-basic-green;
+  }
+
+  &:active path {
+    color: $bg-basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
     bottom: 0;
-    right: 0;
-    display: block;
-    content: "";
-    width: 27px;
-    height: 34px;
-    mask-image: url("../../icons/stack.svg#logo-html");
-    mask-repeat: no-repeat;
-    mask-size: 27px 34px;
-    background-color: $bg-color-social;
-
-    @media (min-width: $tablet-width) {
-      top: 0;
-      left: 140px;
-    }
   }
 }

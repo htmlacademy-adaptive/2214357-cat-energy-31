@@ -16,13 +16,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 55px;
+    padding: 0;
+    padding-top: 57px;
     padding-bottom: 55px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    padding-top: 67px;
     padding-bottom: 66px;
+    width: 1220px;
   }
 }
 
@@ -34,19 +37,27 @@
   width: 280px;
   margin-bottom: 20px;
 
+  &:focus-visible path {
+    fill: #3e3e3e;
+  }
+
+  &:active path {
+    fill: #6b6b6b;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;
     padding: 0;
+    width: 285px;
   }
 }
 
-.main-footer-images {
+.main-footer__images {
   display: block;
   width: 128px;
   height: 24px;
   margin-left: 76px;
-
 
   @media (min-width: $tablet-width) {
     margin: 0;
