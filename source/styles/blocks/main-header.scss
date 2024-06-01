@@ -1,0 +1,78 @@
+.main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 11px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-top: 55px;
+  }
+}
+
+.main-header__icon {
+  display: flex;
+  text-decoration: none;
+  margin-right: auto;
+  margin-bottom: 1px;
+  align-items: center;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__icon-image {
+  display: block;
+  margin-right: 48px;
+  margin-bottom: 13px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.main-header__icon-text {
+  display: block;
+  margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,45 @@
+.product-additional__list {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text-secondary;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: right;
+    text-align: end;
+    margin-bottom: 22px;
+    margin-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    justify-content: space-between;
+    width: 285px;
+    margin-bottom: 0;
+    padding-top: 8px;
+    align-items: center;
+  }
+}
+
+.product-additional__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.product-additional__meaning {
+  margin-left: 52px;
+}

@@ -1,0 +1,51 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  width: 280px;
+  height: 34px;
+  position: relative;
+  right: 0;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-secondary;
+  text-decoration: none;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 162px;
+    display: table-cell;
+    vertical-align: middle;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__logo {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  right: 0;
+  bottom: 6;
+  color: $bg-color-social;
+
+  &:focus-visible path {
+    color: $bg-basic-green;
+  }
+
+  &:active path {
+    color: $bg-basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+  }
+}
