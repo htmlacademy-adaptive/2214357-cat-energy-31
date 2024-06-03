@@ -2,11 +2,11 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 102px;
-  }
+    padding-bottom: 100px;
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    @media (min-width: $desktop-width) {
+      padding-bottom: 85px;
+    }
   }
 }
 
@@ -23,8 +23,8 @@
 
 .slider__image {
   display: block;
-  width: 100%;
-  height: 100%;
+
+
   object-position: left;
   object-fit: cover;
 
@@ -43,72 +43,73 @@
   }
 }
 
-.slider__controls {
-  position: absolute;
-  top: 0;
-  left: 139px;
-  height: 100%;
-  width: 4px;
-  padding: 0;
-  background-color: $bg-color-social;
-  border: none;
-  border-radius: 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &:hover {
-    background-color: $bg-basic-green;
-  }
-
-  &:active {
-    background-color: $bg-color-slider;
-    opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    left: 278px;
-  }
-}
-
 .slider__toggle {
-  position: absolute;
-  top: 107px;
-  right: 120px;
+  z-index: 1;
+  position: relative;
+  top: 1px;
+  right: 140px;
+  transform: translateX(-50%);
+
   width: 40px;
-  height: 40px;
-  background-color: $color-text-fourth;
-  border: 2px solid $bg-color-social;
-  border-radius: 50%;
+  height: 256px;
+  padding: 0;
+  border: 0;
+  color: $bg-color-social;
+  background-color: transparent;
+  cursor: pointer;
+  stroke: $bg-color-social;
 
-  &:hover {
-    border: 2px solid $bg-basic-green;
-  }
-
-  &:active {
-    border: 2px solid $bg-color-slider;
+  &::before {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 127px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: $bg-color-social;
   }
 
   @media (min-width: $tablet-width) {
-    top: 237px;
-    right: 258px;
-  }
-}
 
-.slider__images {
-  position: absolute;
-  bottom: 9px;
-  left: 5px;
-  width: 24px;
-  height: 18px;
-  color: $bg-color-social;
+    height: 512px;
+    left: -280px;
+    top: 3px;
 
-  &:hover {
-    color: $bg-basic-green;
-  }
+    &::before {
+      top: 256px;
+    }
 
-  &:active {
-    color: $bg-color-slider;
-    opacity: 0.6;
+    &:disabled,
+    &:disabled::before {
+      opacity: 0.3;
+      cursor: default;
+    }
+
+    &:focus-visible,
+    &:not(:disabled):hover {
+      color: $bg-basic-green;
+      stroke: $bg-basic-green;
+    }
+
+    &:focus-visible::before,
+    &:not(:disabled):hover::before {
+      background-color: $bg-basic-green;
+      stroke: $bg-basic-green;
+    }
+
+    &:not(:disabled):active {
+      color: $bg-color-slider;
+      opacity: 0.6;
+      stroke: $bg-color-slider;
+    }
+
+    &:not(:disabled):active::before {
+      background-color: $bg-color-slider;
+      stroke: $bg-color-slider;
+    }
   }
 }
