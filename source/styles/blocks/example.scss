@@ -152,9 +152,10 @@
     line-height: 14px;
     margin-bottom: 55px;
     background-color: $color-text-fourth;
-    min-width: 150px;
+    min-width: 125px;
     top: 63px;
     left: 5px;
+    margin-left: 12px;
   }
 
   @media (min-width: $desktop-width) {
