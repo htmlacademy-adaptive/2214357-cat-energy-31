@@ -31,8 +31,12 @@
 }
 
 .description-list__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 7px;
+    padding-bottom: 5px;
   }
 }
 
@@ -41,6 +45,7 @@
     padding-bottom: 9px;
   }
 }
+
 
 .description-list__item-meaning {
   margin: 0;

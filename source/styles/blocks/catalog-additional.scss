@@ -74,7 +74,6 @@
   padding: 0;
   list-style: none;
   margin-bottom: 35px;
-  border-bottom: 1px solid $color-line-3;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -171,10 +170,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    width: 245px;
-    padding-bottom: 0;
-    padding-right: 0;
-    text-align: center;
+    width: 24px;
+    padding-bottom: 3px;
   }
 
   &::before {

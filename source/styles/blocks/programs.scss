@@ -110,7 +110,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 29px 70px;
+  margin: 0 0 30px 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -128,7 +128,9 @@
   font-family: $font-primary;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 0 21px;
+
+  margin: 0 0 20px;
+
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 22px;
 
@@ -180,8 +182,10 @@
     content: "";
     width: 32px;
     height: 10px;
-    top: 6px;
-    left: 101px;
+
+    top: 7px;
+    left: 100px;
+
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
 
