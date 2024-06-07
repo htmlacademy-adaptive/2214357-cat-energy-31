@@ -60,11 +60,7 @@
 
 .main-header__icon-text {
   display: block;
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-  }
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     width: 118px;

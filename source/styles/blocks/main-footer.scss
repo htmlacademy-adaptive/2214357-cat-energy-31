@@ -1,6 +1,7 @@
 .main-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   background-color: $bg-basic-grey;
 }
@@ -13,43 +14,50 @@
 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    padding-top: 57px;
-    padding-bottom: 55px;
-    width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 62px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding: 0;
+    padding-top: 74px;
     padding-bottom: 66px;
     width: 1220px;
   }
-}
 
-.main-footer__link {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  width: 280px;
-  margin-bottom: 20px;
-
-  &:focus-visible path {
-    fill: #3e3e3e;
-  }
-
-  &:active path {
-    fill: #6b6b6b;
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
+  .main-footer__link {
+    display: block;
+    text-align: -webkit-center;
     margin: 0;
     padding: 0;
-    width: 285px;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: 19px;
+    border-bottom: 1px solid $color-line-1;
+
+    &:hover path,
+    &:focus-visible path {
+      fill: #3e3e3e;
+    }
+
+    &:active path {
+      fill: #6b6b6b;
+    }
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      margin: 0;
+      padding: 0;
+      padding-right: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+    }
   }
 }
 
@@ -57,10 +65,5 @@
   display: block;
   width: 128px;
   height: 24px;
-  margin-left: 76px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-right: 160px;
-  }
+  text-align: start;
 }
