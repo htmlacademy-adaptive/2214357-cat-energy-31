@@ -1,0 +1,157 @@
+.catalog-plus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 20px 25px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 324px;
+    padding: 36px 37px 40px;
+    margin-top: 83px;
+    border: 2px solid $bg-basic-grey;
+    background-color: $bg-basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+}
+
+.catalog-plus__wrapper {
+  grid-column: 1/3;
+  position: relative;
+  width: 219px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
+}
+
+.catalog-plus__link-images {
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 95px;
+    mask-image: url("../../icons/stack.svg#plus");
+    mask-repeat: no-repeat;
+    background-color: $bg-color-4;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      top: -53px;
+      left: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -40px;
+    }
+  }
+
+  &:focus-visible::before,
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+
+.catalog-plus__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-third;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 59px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.catalog-plus__title-link {
+  text-decoration: none;
+  color: $bg-color-logo;
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-plus__description {
+  font-family: $font-primary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-secondary;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 91px;
+  }
+}
+
+.catalog-plus__button {
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 54px;
+  }
+
+  &--grey {
+    background-color: $bg-basic-grey;
+    color: $color-text-secondary;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 38px;
+    }
+  }
+}
